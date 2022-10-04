@@ -4,6 +4,8 @@ import android.app.Service
 import android.content.Intent
 import android.os.IBinder
 import java.util.*
+import kotlin.math.min
+import kotlin.math.roundToInt
 
 class StopWatchService: Service() {
     override fun onBind(p0: Intent?): IBinder? = null
@@ -34,5 +36,6 @@ class StopWatchService: Service() {
         }
 
     }
+
 
 }
